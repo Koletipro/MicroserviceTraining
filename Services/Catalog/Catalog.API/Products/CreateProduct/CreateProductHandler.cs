@@ -34,10 +34,17 @@ internal class CreateProductCommandHandler
             ImageFile = command.ImageFile,
             Price = command.Price
         };
-        
+
+        //product.AddDomainEvent(new ProductCreatedDomainEvent {....});
+        //Logging
+        //Auditing
+        //Raise Integration Event : ProductCreatedIntegrationEvent
+
         //save to database
         session.Store(product);
         await session.SaveChangesAsync(cancellationToken);
+
+     
 
         //return result
         return new CreateProductResult(product.Id);

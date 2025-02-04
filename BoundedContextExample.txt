@@ -1,0 +1,43 @@
+Product Bounded Context : Product Service 
+-- Product Category
+-- Product Tag
+-- Product Type: Id, Name, Description (Asset, Stock, Service)
+-- Product : Id, Code, Name, Description,ProductTypeId 
+-- Product Variant
+
+-Events
+-- Domain Event : In process for Developer
+-- Integration Event 
+--- Publish Product Type Created Event
+--- Publish Product Type Updated Event
+--- Publish Product Type Deleted Event
+--- Publish Product Created Event
+--- Publish Product Updated Event
+--- Publish Product Deleted Event
+
+Procurement Module 
+- Vendor Bounded context
+-- Vendor Category : Name, Description
+-- Vendor : Name, Code, Address, Email, Website
+
+-Events
+-- Domain Event : In process for Developer
+-- Integration Event 
+--- Publish Vendor Created Event
+--- Publish Vendor Updated Event
+--- Publish Vendor Deleted Event
+
+- Purchase Bounded Context 
+-- Vendor : Id, Code, Name   : Thru Integration Event
+-- ProductType : Id, Name  : Thru Integration Event
+-- product : Id, Code, Name, ProductTypeId, Price :  Thru Integration Event
+-- Pricelist : Id, VendorId, ProductId, Price
+
+-Events Subscription
+-- Subscribe to Vendor Created Event
+-- Subscribe to Vendor Updated Event
+-- Subscribe to Vendor Deleted Event
+-- Subscribe to Product Created Event
+-- Subscribe to Product Updated Event
+-- Subscribe to Product Deleted Event
+

@@ -39,6 +39,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customers.Application", "Se
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{BC6B1037-41F3-469C-9A3C-A9DAE1AA08DD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{00D74DFB-568F-4BFC-B5E6-83C9D9C72F4E}"
+	ProjectSection(SolutionItems) = preProject
+		BoundedContextExample.txt = BoundedContextExample.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
