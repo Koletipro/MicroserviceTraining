@@ -41,6 +41,7 @@ Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-co
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{00D74DFB-568F-4BFC-B5E6-83C9D9C72F4E}"
 	ProjectSection(SolutionItems) = preProject
+		Assessment.txt = Assessment.txt
 		BoundedContextExample.txt = BoundedContextExample.txt
 		..\..\..\Training\MicroserviceTraining.postman_collection.json = ..\..\..\Training\MicroserviceTraining.postman_collection.json
 	EndProjectSection

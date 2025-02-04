@@ -1,0 +1,5 @@
+Microservice Training Assignment: 
+1. Analyze and model an Inventory Module
+-- Possible Bounded Context
+-- Possible Models
+-- Possible Events
